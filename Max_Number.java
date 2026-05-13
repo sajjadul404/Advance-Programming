@@ -1,5 +1,5 @@
-class Main{
-    pubic static void main(String[] args){
+class Max_Number {
+    public static void main(String[] args){
         int arr [] = {1, 2, 3, 4, 5};
         int max = arr[0];
 
