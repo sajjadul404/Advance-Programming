@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class EvenOdd {
+public class Even_Odd {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
