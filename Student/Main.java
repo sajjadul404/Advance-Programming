@@ -7,7 +7,7 @@ class Student {
     private int researchPapers;
     private int extracurricularScore;
 
-    // Constructor
+
     public Student(String studentId, String name, double cgpa,
                    int researchPapers, int extracurricularScore) {
         this.studentId = studentId;
@@ -17,7 +17,7 @@ class Student {
         this.extracurricularScore = extracurricularScore;
     }
 
-    // Getters
+
     public String getStudentId() {
         return studentId;
     }
@@ -38,7 +38,7 @@ class Student {
         return extracurricularScore;
     }
 
-    // Display Method
+
     public void displayInfo() {
         System.out.println("Student ID: " + studentId);
         System.out.println("Name: " + name);
@@ -51,14 +51,13 @@ class Student {
 
 class ScholarshipEvaluator {
 
-    // Calculate Merit Score
+
     public double calculateMeritScore(Student s) {
         return (s.getCgpa() * 40)
                 + (s.getResearchPapers() * 15)
                 + (s.getExtracurricularScore() * 2);
     }
 
-    // Find Best Candidate
     public Student findBestCandidate(Student[] students) {
         Student best = students[0];
 
@@ -70,12 +69,10 @@ class ScholarshipEvaluator {
                 best = students[i];
             } else if (currentScore == bestScore) {
 
-                // Higher CGPA wins
                 if (students[i].getCgpa() > best.getCgpa()) {
                     best = students[i];
                 }
 
-                // If CGPA also equal, more research papers win
                 else if (students[i].getCgpa() == best.getCgpa()) {
                     if (students[i].getResearchPapers() >
                             best.getResearchPapers()) {
@@ -87,7 +84,6 @@ class ScholarshipEvaluator {
         return best;
     }
 
-    // Create Honors Student
     public Student createHonorsStudent(Student s) {
         double newCgpa = s.getCgpa() + 0.1;
 
@@ -118,13 +114,11 @@ public class Main {
 
         ScholarshipEvaluator evaluator = new ScholarshipEvaluator();
 
-        // Find Best Candidate
         Student bestStudent = evaluator.findBestCandidate(students);
 
         System.out.println("=== Selected Scholarship Candidate ===");
         bestStudent.displayInfo();
 
-        // Create Honors Student
         Student honorsStudent = evaluator.createHonorsStudent(bestStudent);
 
         System.out.println("=== Honors Student ===");
