@@ -51,9 +51,9 @@ public class Main {
  
         Book[] collection = new Book[5];
 
-        Book b1 = new Book("Java Programming", "James Gosling", "ISBN101");
-        Book b2 = new Book("Data Structures", "Mark Allen", "ISBN102");
-        Book b3 = new Book("Database Systems", "Elmasri", "ISBN103");
+        Book b1 = new Book("Java Programming", "Humayra Ferdous", "CSE101");
+        Book b2 = new Book("Data Structures", "Bijon Mollik", "CSE102");
+        Book b3 = new Book("Database Systems", "Nahid Hasan", "CSE103");
 
         Book.addBook(collection, b1, 0);
         Book.addBook(collection, b2, 1);
@@ -66,7 +66,7 @@ public class Main {
             }
         }
 
-        Book.removeBook(collection, "ISBN102");
+        Book.removeBook(collection, "CSE102");
 
         System.out.println("Books in Collection After Removal:");
         for (Book b : collection) {
