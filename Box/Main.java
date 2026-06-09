@@ -5,16 +5,15 @@ class Box {
     private int width;
     private int height;
 
-    // Constructor
+   
     Box(int length, int width, int height) {
         this.length = length;
         this.width = width;
         this.height = height;
     }
 
-    // Method to adjust dimensions
     void adjustDimensions() {
-        // Required dimensions
+ 
         int reqLength = 10;
         int reqWidth = 12;
         int reqHeight = 8;
@@ -35,7 +34,7 @@ class Box {
             height -= (height - reqHeight);
     }
 
-    // Display method
+
     void display() {
         System.out.println("Length = " + length + " meters");
         System.out.println("Width  = " + width + " meters");
@@ -47,13 +46,13 @@ class Box {
 public class Main {
     public static void main(String[] args) {
 
-        // Create Box object
+
         Box box1 = new Box(9, 14, 10);
 
         System.out.println("Before Adjustment:");
         box1.display();
 
-        // Adjust dimensions
+   
         box1.adjustDimensions();
 
         System.out.println("After Adjustment:");
