@@ -81,31 +81,24 @@ class Team {
     public int getMatchesPlayed() {
         return matchesPlayed;
     }
-
     public int getWins() {
         return wins;
     }
-
     public int getDraws() {
         return draws;
     }
-
     public int getLosses() {
         return losses;
     }
-
     public int getGoalsScored() {
         return goalsScored;
     }
-
     public int getGoalsConceded() {
         return goalsConceded;
     }
-
     public int calculateGoalDifference() {
         return goalsScored - goalsConceded;
     }
-
     public void displayTeamInfo() {
         System.out.println("\nCountry: " + countryName);
         System.out.println("Matches Played: " + matchesPlayed);
