@@ -17,31 +17,24 @@ class Player {
         this.assists = assists;
         this.rating = rating;
     }
-
     public int getPlayerId() {
         return playerId;
     }
-
     public String getPlayerName() {
         return playerName;
     }
-
     public String getPosition() {
         return position;
     }
-
     public int getGoals() {
         return goals;
     }
-
     public int getAssists() {
         return assists;
     }
-
     public double getRating() {
         return rating;
     }
-
     public void displayPlayerInfo() {
         System.out.println("Player ID: " + playerId);
         System.out.println("Name: " + playerName);
