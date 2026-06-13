@@ -13,7 +13,6 @@ class Smartphone {
     public String getModel() {
         return model;
     }
-
     public int getStorageCapacity() {
         return storageCapacity;
     }
