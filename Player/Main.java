@@ -140,7 +140,6 @@ class WorldCupAnalyzer {
             if (currentPoints > championPoints) {
                 champion = teams[i];
             }
-
             else if (currentPoints == championPoints) {
 
                 if (teams[i].calculateGoalDifference() >
