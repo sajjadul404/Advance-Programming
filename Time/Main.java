@@ -4,19 +4,16 @@ import java.util.Scanner;
 
 class Time {
     int hours, minutes, seconds;
-
     Time() {
         hours = 0;
         minutes = 0;
         seconds = 0;
     }
-
     Time(int h, int m, int s) {
         hours = h;
         minutes = m;
         seconds = s;
     }
-
     Time add_time(Time t1, Time t2) {
         Time result = new Time();
 
@@ -28,20 +25,16 @@ class Time {
             result.minutes += result.seconds / 60;
             result.seconds %= 60;
         }
-
         if (result.minutes >= 60) {
             result.hours += result.minutes / 60;
             result.minutes %= 60;
         }
-
         return result;
     }
-
     void display() {
         System.out.println(hours + ":" + minutes + ":" + seconds);
     }
 }
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
