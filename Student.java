@@ -17,9 +17,8 @@ class Student
         System.out.println("Student name: "+name+" "+"Roll: "+roll);
     }
 }
-class Main
-{
-    public static void main(String args[])
+class Main{
+        public static void main(String args[])
     {
         Student s1=new Student("ABC",3);
         Student s2 = new Student(12,"VBD");
