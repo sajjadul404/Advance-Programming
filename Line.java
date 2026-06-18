@@ -16,8 +16,7 @@ class Line
         System.out.println("Point1: "+point1+" Point2: "+point2);
     }
 }
-class Main
-{
+class Main{
     public static void main(String args[])
     {
         Line l1[] = new Line[3];
