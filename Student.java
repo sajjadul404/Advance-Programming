@@ -12,6 +12,7 @@ class Student
         this.name = name;
         this.roll = roll;
     }
+    
     void display()
     {
         System.out.println("Student name: "+name+" "+"Roll: "+roll);
