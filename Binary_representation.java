@@ -18,9 +18,7 @@ public class Binary_representation {
             if(binary.charAt(i)=='0'){
                zeroCount++;
             }
-        }
-
-            
+        }   
          System.out.println("Binary representation of " + num + " is: " + binary);
          System.out.println("Number of zero bits: " + zeroCount);
          
