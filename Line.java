@@ -28,6 +28,5 @@ class Main{
         {
             l1[i].display();
         }
-
     }
 }
