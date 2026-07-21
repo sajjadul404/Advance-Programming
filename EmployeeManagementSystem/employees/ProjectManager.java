@@ -1,6 +1,6 @@
-package managers;
+package employees;
 
-import employees.FullTimeEmployee;
+import managers.Manager;
 
 public class ProjectManager extends FullTimeEmployee implements Manager {
     private String department;
