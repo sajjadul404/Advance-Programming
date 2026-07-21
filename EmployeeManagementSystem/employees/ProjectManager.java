@@ -10,6 +10,7 @@ public class ProjectManager extends FullTimeEmployee implements Manager {
         this.department = department;
     }
 
+   
     public void assignTask(String task) {
         System.out.println("Project Manager " + name + " from " + department + 
                            " department assigned task: " + task);
@@ -19,6 +20,7 @@ public class ProjectManager extends FullTimeEmployee implements Manager {
         System.out.println(name + " is managing the " + department + " department and assigning tasks.");
     }
 
+    @Override
     public String getEmployeeDetails() {
         return super.getEmployeeDetails() + "\n" +
                "Department: " + department;
