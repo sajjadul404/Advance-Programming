@@ -9,7 +9,6 @@ public class Rectangle implements Printable {
         this.length = length;
         this.width = width;
     }
-    
  
     public double getLength() {
         return length;
