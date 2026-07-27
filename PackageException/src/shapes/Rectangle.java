@@ -13,7 +13,6 @@ public class Rectangle implements Printable {
     public double getLength() {
         return length;
     }
-    
     public double getWidth() {
         return width;
     }
