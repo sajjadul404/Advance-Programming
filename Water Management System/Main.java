@@ -32,19 +32,5 @@ public class Main {
 
         analysis.analyzeAll();
 
-        System.out.println();
-        System.out.println("========== Scenario 2: Negative pH Sensor Glitch ==========");
-        WaterAnalysis glitchAnalysis = new WaterAnalysis();
-        // Simulates a faulty sensor reporting a physically impossible pH
-        glitchAnalysis.addReading(new WaterReading(-1.0, 2.5, 0.5, "ACTIVE", "FAULTY", "Bashundhara"));
-        glitchAnalysis.addReading(new WaterReading(7.4, 2.1, 0.6, "ACTIVE", "OPERATIONAL", "Motijheel"));
-        glitchAnalysis.analyzeAll();
-
-        System.out.println();
-        System.out.println("========== Scenario 3: All Readings Invalid (no valid data to average) ==========");
-        WaterAnalysis emptyAnalysis = new WaterAnalysis();
-        emptyAnalysis.addReading(new WaterReading(9.5, 2.0, 0.5, "ACTIVE", "OPERATIONAL", "Tejgaon"));
-        emptyAnalysis.addReading(new WaterReading(7.0, 3.0, 0.6, "OFFLINE", "OPERATIONAL", "Badda"));
-        emptyAnalysis.analyzeAll();
     }
 }
