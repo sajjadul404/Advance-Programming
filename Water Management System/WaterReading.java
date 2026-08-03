@@ -1,12 +1,3 @@
-/**
- * Represents one set of sensor readings captured from a single
- * monitoring zone at a point in time.
- *
- * Numeric fields use the wrapper classes (Double) rather than
- * primitives so that a missing/faulty sensor reading can be
- * represented as null, which WaterMonitor detects and reports
- * as a NullPointerException.
- */
 public class WaterReading {
     private Double pHLevel;
     private Double turbidity;      // in NTU
