@@ -1,14 +1,3 @@
-/**
- * Entry point for the AquaFlow Solutions Smart Water Management demo.
- *
- * Scenario 1 reproduces the five required cases (valid, bad pH,
- * contamination, missing data, pump offline).
- *
- * Scenarios 2 and 3 are bonus demonstrations proving the remaining
- * required built-in exceptions are wired up correctly:
- *   - IllegalArgumentException (negative pH reading)
- *   - ArithmeticException (zero valid readings to average)
- */
 public class Main {
     public static void main(String[] args) {
 
